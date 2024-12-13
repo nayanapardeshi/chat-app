@@ -1,0 +1,165 @@
+.rs {
+    background: #001030;
+    color: white;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    border-left: 1px solid #002670;
+    padding-top: 0px;
+}
+
+.rs-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.rs-profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #077EFF;
+}
+
+.rs-profile-name {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.rs-profile-status {
+    font-size: 12px;
+    color: #9f9f9f;
+    margin: 0;
+    text-align: center;
+}
+
+.rs-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.rs-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #c8c8c8;
+}
+
+.rs-detail-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+.rs-actions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.rs-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rs-btn.edit {
+    background-color: #077EFF;
+    color: white;
+}
+
+.rs-btn.logout {
+    background-color: #FF4C4C;
+    color: white;
+}
+
+.rs-btn.edit:hover {
+    background-color: #0056b3;
+}
+
+.rs-btn.logout:hover {
+    background-color: #b30000;
+}
+
+.rs-media {
+    padding: 10px; /* Reduce padding to fit content neatly */
+    font-size: 14px;
+    color: #fff;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    max-height: calc(100% - 20px); /* Prevent overflow vertically */
+    overflow: hidden; /* Ensure no content spills out */
+}
+
+.rs-media h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #077EFF;
+    padding-bottom: 5px;
+    margin-top: 0px;
+}
+
+.rs-media div {
+    max-height: 160px; /* Adjust to ensure it fits inside the sidebar */
+    overflow-y: auto; /* Enable scrolling for content overflow */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Flexible layout */
+    gap: 8px; /* Reduce gap for better spacing */
+    
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #077EFF #001030; /* For Firefox */
+}
+
+/* Custom scrollbar styling */
+.rs-media div::-webkit-scrollbar {
+    width: 6px; /* Slimmer scrollbar */
+}
+
+.rs-media div::-webkit-scrollbar-thumb {
+    background-color: #077EFF;
+    border-radius: 4px;
+}
+
+.rs-media div::-webkit-scrollbar-track {
+    background: #001030;
+}
+
+.rs-media div img {
+    width: 100%; /* Fit image to grid container */
+    aspect-ratio: 1 / 1; /* Ensure square images */
+    border-radius: 6px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rs-media div img:hover {
+    transform: scale(1.05); /* Subtle zoom effect */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Add a slight shadow */
+}
+.rs button{
+    position:relative;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #077eff;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 65px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
